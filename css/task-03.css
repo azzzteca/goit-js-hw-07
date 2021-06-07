@@ -1,18 +1,13 @@
-/* img {
+img {
 
-    display: flex;
-    width: 800px;
+    /* display: flex; */
+    max-width: 100%;
     height: auto;
-    justify-content: center;
+    margin-bottom: 15px;
+    
 
-} */
+}
 
-.img-thumb {
-
-    display: flex;
-
-    width: 1000px;
-    height: auto;
-
-
+ul {
+    list-style: none;
 }

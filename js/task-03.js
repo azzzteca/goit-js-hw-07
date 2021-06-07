@@ -13,23 +13,11 @@ const images = [
   },
 ];
 
-  
-  const imagesArrayEl = images.map (image => {
-    const liEl = document.createElement('li');
-    const thumbEl = document.createElement('div');
-    thumbEl.classList.add('img-thumb')
-
-    console.log(thumbEl);
-    const imageEl = document.createElement('img');
-    newImageEl.src = image.url;
-    newImageEl.alt = image.alt;
-
-    thumbEl.appendChild(newImageEl)
-    newLiEl.appendChild(thumbEl);
-
-    return newImageEl;
-  })
-
   const ulEl = document.querySelector ('#gallery');
 
-  ulEl.append (...imagesArrayEl);
+  const imagesArray = images.map(image => {
+    const ImageEl = ('beforeend', `<li> <img src=${image.url} alt=${image.alt}</li>`);
+    return ImageEl;
+  });
+
+  ulEl.insertAdjacentHTML('beforeend', imagesArray);
