@@ -39,6 +39,6 @@ function deleteBoxes () {
         if (boxesEl.hasChildNodes) {
             boxesEl.removeChild(boxesEl.lastElementChild);
         };
-};
+    };
     inputEl.value = '';
 };
