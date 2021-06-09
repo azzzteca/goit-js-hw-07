@@ -36,7 +36,8 @@ function deleteBoxes () {
 
     for (let i = 1; i <= inputEl.value; i += 1) {
 
-        if (boxesEl.hasChildNodes) {
+        if (boxesEl.hasChildNodes()) {
+            
             boxesEl.removeChild(boxesEl.lastElementChild);
         };
     };
