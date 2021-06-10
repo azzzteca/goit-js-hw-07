@@ -4,4 +4,7 @@ const spanEl = document.querySelector('#name-output');
 
 // inputEl.addEventListener('keyup', () => spanEl.textContent = inputEl.value);
 
-inputEl.addEventListener('input', event => spanEl.textContent = event.currentTarget.value);
+inputEl.addEventListener('input', event => spanEl.textContent = event.currentTarget.value.trim() || 'незнакомец');
+
+// inputEl.addEventListener('input', event => spanEl.textContent = inputEl.value.trim() || 'незнакомец');
+
